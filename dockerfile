@@ -15,5 +15,5 @@ ADD ./apache/apache2.conf /etc/apache2/
 ADD ./apache/files/info.php /var/www/html/
 
 ADD ./script.sh /tmp/
-RUN [  "chmod", "+x", "/tmp/script.sh" ]
-RUN [ "/tmp/script.sh" ]
+RUN chmod +x /tmp/script.sh
+RUN /tmp/script.sh
